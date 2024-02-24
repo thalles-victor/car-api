@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  car-db:
+    container_name: car-db
+    image: postgres:16
+
+    environment:
+      - DATABASE_DB=car-db
+      - DATABASE_USER=user
+      - DATABAES_PASSWORD=password
+
+    ports:
+      - 5432:5432
