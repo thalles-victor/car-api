@@ -35,3 +35,9 @@ export class UnauthorizedAccessException extends ExceptionError {
     super(`unauthorized access`, 401);
   }
 }
+
+export class BadRequestException extends ExceptionError {
+  constructor(message?: string) {
+    super(`bad request ${message}`, 400);
+  }
+}
