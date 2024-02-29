@@ -6,9 +6,9 @@ services:
     image: postgres:16
 
     environment:
-      - DATABASE_DB=car-db
-      - DATABASE_USER=user
-      - DATABAES_PASSWORD=password
+      - POSTGRES_DB=car-db
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
 
     ports:
       - 5432:5432
