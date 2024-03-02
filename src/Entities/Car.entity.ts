@@ -16,11 +16,11 @@ type CarEntityProps = {
   max_power: string;
   max_torque: string;
   drivetrain: string;
-  length: Float32Array;
-  width: Float32Array;
-  height: Float32Array;
-  seating_capacity: Float32Array;
-  fuel_tank_capacity: Float32Array;
+  length: string;
+  width: string;
+  height: string;
+  seating_capacity: string;
+  fuel_tank_capacity: string;
 };
 
 export class CarEntity {
@@ -40,11 +40,11 @@ export class CarEntity {
   max_power: string;
   max_torque: string;
   drivetrain: string;
-  length: Float32Array;
-  width: Float32Array;
-  height: Float32Array;
-  seating_capacity: Float32Array;
-  fuel_tank_capacity: Float32Array;
+  length: string;
+  width: string;
+  height: string;
+  seating_capacity: string;
+  fuel_tank_capacity: string;
   created_at: Date;
   updated_at: Date;
 
@@ -72,5 +72,7 @@ export class CarEntity {
     this.fuel_tank_capacity = props.fuel_tank_capacity;
     this.created_at = new Date();
     this.updated_at = new Date();
+
+    return this;
   }
 }
